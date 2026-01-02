@@ -1,18 +1,41 @@
-# My Novel Project
+# LOTU - Legends of the Universe
 
-A fiction novel writing project organized for use with Claude Code.
+A multi-novel fiction writing project organized for use with Claude Code, featuring interconnected stories across multiple worlds.
 
-## Project Status
-- **Genre:** [Your Genre]
-- **Target Word Count:** [e.g., 80,000 words]
-- **Current Status:** Planning/Drafting/Revision
+## Series Overview
+
+A multiversal narrative series where an ethereal being capable of traversing time and space operates from the shadows, helping protagonists across different worlds.
+
+**Genre:** Mixed Multiversal - Fantasy/Sci-Fi blend  
+**Target Audience:** Young Adult  
+**Current Status:** Planning Phase
+
+## Novel Series Structure
+
+### Novel 1: Fantasy Magical Tech World
+- **Setting:** A world combining magical elements with technology
+- **Target Word Count:** 120,000 words
+- **Protagonist:** [To be developed]
+- **Status:** Planning
+
+### Future Novels
+- Novel 2: [World type TBD]
+- Novel 3: [World type TBD]
+
+## Key Features
+
+- **Multi-world storytelling** with unique protagonists per world
+- **Shared cosmology** and metaphysical framework
+- **Subtle interconnections** and cross-world references
+- **Shadow protagonist** (the ethereal being) connecting all narratives
 
 ## Quick Start
 
-1. Update this README with your novel details
-2. Fill out `manuscript/outline.md` with your story structure
-3. Create character profiles in `worldbuilding/characters/`
-4. Start writing chapters in `manuscript/chapters/`
+1. Choose which novel to work on from the `novels/` directory
+2. Fill out the novel's outline in `novels/[novel_name]/manuscript/outline.md`
+3. Create character profiles in `worldbuilding/characters/` (shared across novels)
+4. Start writing chapters in `novels/[novel_name]/manuscript/chapters/`
+5. Define cosmology and multi-world rules in `worldbuilding/cosmology.md`
 
 ## Quick Commands
 
@@ -38,10 +61,15 @@ Use Claude Code to help with:
 
 ## Word Count Goal Tracking
 
-Update this section as you progress:
-- Chapter 1: 3,200 words ✓
-- Chapter 2: 2,800 words ✓
-- Chapter 3: In progress...
+### Novel 1: Fantasy Magical Tech
+- Target: 120,000 words
+- Chapter 1: [In progress]
+- Chapter 2: [Planned]
+- Chapter 3: [Planned]
+
+### Overall Series Progress
+- Total Target: 360,000+ words (3+ novels)
+- Current Focus: Novel 1 planning and development
 
 ## Notes
 

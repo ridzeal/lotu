@@ -1,20 +1,30 @@
 .PHONY: help count compile track init test clean status
 
 help:
-	@echo "Novel Project Commands:"
-	@echo "  make count       - Count words in all chapters"
-	@echo "  make compile     - Compile manuscript into single document"
-	@echo "  make track       - Track character appearances across chapters"
-	@echo "  make init        - Initialize git repository"
-	@echo "  make status      - Show git status"
-	@echo "  make test        - Test all scripts"
-	@echo "  make clean       - Remove compiled exports"
+	@echo "LOTU - Multi-Novel Project Commands:"
+	@echo "  make count           - Count words in all novels"
+	@echo "  make count NOVEL=X   - Count words in specific novel"
+	@echo "  make compile         - Compile all novels into single documents"
+	@echo "  make compile NOVEL=X - Compile specific novel"
+	@echo "  make track           - Track character appearances across chapters"
+	@echo "  make init            - Initialize git repository"
+	@echo "  make status          - Show git status"
+	@echo "  make test            - Test all scripts"
+	@echo "  make clean           - Remove compiled exports"
 
 count:
-	@python3 scripts/word_count.py
+	@if [ -n "$(NOVEL)" ]; then \
+		python3 scripts/word_count.py $(NOVEL); \
+	else \
+		python3 scripts/word_count.py; \
+	fi
 
 compile:
-	@python3 scripts/compile_manuscript.py
+	@if [ -n "$(NOVEL)" ]; then \
+		python3 scripts/compile_manuscript.py $(NOVEL); \
+	else \
+		python3 scripts/compile_manuscript.py; \
+	fi
 
 track:
 	@python3 scripts/character_tracker.py
